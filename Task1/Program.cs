@@ -1,9 +1,9 @@
 ﻿/* Задача 47. Задайте двумерный массив размером m×n, 
 заполненный случайными вещественными числами. */
 
-Print2DArray(Generate2DArray(3, 4));
+PrintArray(GenerateArray(3, 4));
 
-double[,] Generate2DArray(int m, int n)
+double[,] GenerateArray(int m, int n)
 {
     double[,] result = new double[m, n];
     {
@@ -18,7 +18,7 @@ double[,] Generate2DArray(int m, int n)
     return result;
 }
 
-void Print2DArray(double[,] arr)
+void PrintArray(double[,] arr)
 {
         {
         for(int i = 0; i < arr.GetLength(0); i++)
